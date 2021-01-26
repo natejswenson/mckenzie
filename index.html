@@ -1,7 +1,19 @@
 <HTML>
     <HEAD>
     <TITLE>mckenzie's website</TITLE>
-    <B
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      /* Clearfix (clear floats) */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
     </HEAD>
     <BODY style="background-color:pink; background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);"></BODY>
         <HR>
@@ -14,14 +26,29 @@
                 <i>Built by Mckenzie Swenson with help from her dad</i>
             </H6>
             <P>
-                My favorite pet is pupies:
-                <div style="margin-left: auto;margin-right: auto;">
-                    <img src="img/IMG_2971.jpg" style="width:300px;height:400px">
+                <div class="row">
+                    <div class="column">
+                        My favorite pet is pupies:
+                        <div style="margin-left: auto;margin-right: auto;">
+                            <img src="img/IMG_2971.jpg" style="width:300px;height:400px">
+                        </div>
+                    </div>
+                    <div class="column"> 
+                        Here is a crazy cat:
+                            <div style="margin-left: auto;margin-right: auto;">
+                                <img src="img/crazycat.jpeg" style="width:300px;height:400px">
+                            </div>
+                    </div>
+                    <div class="column"> 
+                        Here is another crazy cat:
+                            <div style="margin-left: auto;margin-right: auto;">
+                                <img src="img/crazeycat3.jpg" style="width:300px;height:400px">
+                            </div>
+                    </div> 
                 </div>
-                Here is a crazy cat:
-                <div style="margin-left: auto;margin-right: auto;">
-                    <img src="img/crazycat.jpeg" style="width:300px;height:400px">
-                </div>
+                
+               
+                
 
             </P>
         <HR>
